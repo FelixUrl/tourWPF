@@ -1,0 +1,43 @@
+﻿<Window x:Class="Tour.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tour"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" MaxHeight="1080" MaxWidth="1920">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background.jpg" TileMode="Tile"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="136"/>
+            <RowDefinition Height="147"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="235.5"/>
+            <ColumnDefinition Width="47.5"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="7"/>
+            <ColumnDefinition Width="7"/>
+            <ColumnDefinition Width="21"/>
+            <ColumnDefinition Width="47.5"/>
+            <ColumnDefinition Width="231.5"/>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="53*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="btn_User" Content="Пользователь" Margin="1,4,0,3" Grid.Column="2" Grid.Row="1" Click="btn_User_Click" FontSize="18" BorderBrush="White" Background="White" Grid.ColumnSpan="2"/>
+        <Button Name="btn_Admin" Content="Администратор" Margin="2,4,0.5,3" Grid.Column="8" Grid.Row="1" Click="btn_Admin_Click" FontSize="18" Background="White" BorderBrush="White" Grid.ColumnSpan="2"/>
+        <Grid Grid.ColumnSpan="6" Grid.Column="3" Margin="11,0,7.5,1">
+            <Grid.Background>
+                <ImageBrush ImageSource="website.png"/>
+            </Grid.Background>
+        </Grid>
+
+    </Grid>
+</Window>
